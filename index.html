@@ -2,6 +2,21 @@
 <html lang="ja">
 
 <head>
+    <script>
+        const expireDate = new Date("2025-12-31T23:59:59+09:00");
+        const now = new Date();
+
+        if (now > expireDate) {
+            document.addEventListener("DOMContentLoaded", () => {
+                document.body.innerHTML = `
+          <div style="text-align:center;margin-top:100px;">
+            <h1>このページの公開は終了しました</h1>
+            <p>お問い合わせは別途ご連絡ください。</p>
+          </div>
+        `;
+            });
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひまわり社会保険労務士事務所 | 三重県伊賀市の就業規則・労務相談・ハラスメント対策</title>
